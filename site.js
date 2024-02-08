@@ -13,3 +13,8 @@ const showTime = (message, {hours, isMorning, isAfternoon, isEvening}) => {
     message.querySelector('#welcome').textContent = isAfternoon
     message.querySelector('#welcome').textContent = isEvening
 }
+
+const message = document.querySelector('#welcome')
+
+const div = message.querySelector('div')
+div.textContent = showTime
